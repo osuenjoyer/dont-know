@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family:  Arial, sans-serif;
 }
 
 
@@ -119,6 +119,51 @@
   font-size: 24px;
   font-weight: 600;
 
+}
+
+.techniques {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto; 
+  padding: 0;
+  column-gap: 100px;
+  row-gap: 60px;
+}
+
+.cards__item {
+  width: 234.5px;
+}
+
+.cards__image {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 43px;
+  border-radius: 50%;
+}
+
+.cards__description {
+  margin: 16px 0 0 0 ;
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.cards__title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .digits {
