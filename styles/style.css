@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -66,8 +75,6 @@
   left: 64px;
 }
 
-
-
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -78,14 +85,7 @@
   top: 64px;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .rotation {
   animation: rotation 20s linear infinite;
@@ -139,7 +139,6 @@
   padding-top: 100px;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 
 .cards {
@@ -148,7 +147,7 @@
   flex-wrap: wrap;
   width: 920px;
   margin: 0 auto; 
-  padding-top: 60px;
+  padding: 60px 0 0 ;
   column-gap: 100px;
   row-gap: 60px;
 }
@@ -181,7 +180,12 @@
   margin: 0;
 }
 
+.video {
+  padding-top: 100px;
+}
+
 .video__iframe {
+  border: none;
   width: 515px;
   height: 316px;
   margin-right: 20px;
@@ -194,7 +198,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 50px;
+  margin: 50px 0 -50px
 }
 
 .oakley {
@@ -224,8 +228,6 @@
   font-size: 24px;
   font-style: normal;
 }
-
-
 
 .table {
   max-width: 1100px;
@@ -292,7 +294,6 @@
   z-index: 0;
 }
 
-
 .feynman__link {
   color: #2f80ed;
   position: absolute;
@@ -339,10 +340,10 @@
 }
 
 .khan__quote-author-subline {
-margin:0 0 68px;
-line-height: 1.15;
-font-size: 24px;
-font-style: normal;
+  margin:0 0 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-style: normal;
 }
 
 .khan__container{
@@ -372,16 +373,28 @@ font-style: normal;
   line-height: 42px;
   font-size: 30px;
   font-style: normal;
+  color: #2f80ed
+}
+
+.khan__book-container {
+  height: 608px;
+  position: relative;
+  z-index: 2;
 }
 
 .section-title_theme_dark {
   color: #f2f2f2;
+  position: relative;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: #f2f2f2;
   padding: 0;
+}
 
+.kaufman {
+  overflow: hidden;
 }
 
 .table_theme_dark {
@@ -409,25 +422,30 @@ font-style: normal;
 }
 
 .kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   position: absolute;
   top: 0;
   right: -210px;
   z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .resources__logo-zone {
   list-style: none;
-  width: 1100px;
+  max-width: 1100px;
   display: flex;
+  justify-content: center;
   margin: 80px auto 0;
+  padding: 0;
 }
 
 .resources__logo {
-width: 270px;
-height: 38px;
-margin: 0;
+  width: 270px;
+  height: 38px;
+  margin: 0;
 }
 
 .resources {

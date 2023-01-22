@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -58,7 +58,7 @@
             <li class="cards__item">
               <img src="./images/cards-recall.png" alt="Картинка: Recall" class="cards__image">
               <h3 class="cards__title">Recall</h3>
-              <p class="cards__description">Вспоминайте изученное - это позволит соединить разрозненные порции памяти.</p>
+              <p class="cards__description">Вспоминайте изученное &ndash; это позволит соединить разрозненные порции памяти.</p>
             </li>
             <li class="cards__item">
               <img src="./images/cards-interliving.png" alt="Картинка: Интервилинг" class="cards__image">
@@ -153,7 +153,7 @@
       <section class="khan">
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
-          <h2 class="khan__title">Весь мир - школа</h2>
+          <blockquote class="khan__title">Весь мир - школа</blockquote>
           <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
               Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, 
               которые приносят успех в школе, карьере и жизни.</blockquote>
@@ -161,7 +161,7 @@
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img src="./images/khan-book.jpg" alt="Книга: Салман Хан Весь мир - школа" class="khan__book-pic">
-            <a href="#" class="khan__buy-link">Купить книгу &rarr;</a>
+            <a href="#" class="khan__buy-link" target="_blank" rel="noopener">Купить книгу &rarr;</a>
           </div>
         </div>
       </section>
@@ -212,17 +212,29 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <img class="kaufman__triangle rotation" src="/images/kaufman-triangle.svg" alt="Бэкграунд треугольник">
+        <div class="kaufman__triangle rotation"></div>
       </section>
       
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
-          <li><a href="#"><img src="./images/logo/resources-arzamas.svg" alt="Картинка Проект Арзамас" class="resources__logo"></a></li>
-          <li><a href="#"><img src="./images/logo/resources-n1.svg" alt="Картинка Проект N+1" class="resources__logo"></a></li>
-          <li><a href="#"><img src="./images/logo/resources-strelka.svg" alt="Картинка Проект Стрелка" class="resources__logo"></a></li>
-          <li><a href="#"><img src="./images/logo/resources-polka.svg" alt="Картинка Проект Полка" class="resources__logo"></a></li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"><img src="./images/logo/resources-arzamas.svg" alt="Картинка Просветительский проект, 
+            посвящённый истории культуры: Арзамас" class="resources__logo"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"><img src="./images/logo/resources-n1.svg" alt="Картинка Российское научно-популярное 
+            интернет-издание N+1" class="resources__logo"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"><img src="./images/logo/resources-strelka.svg" alt="Картинка Стратегический 
+            Консталинг Стрелка" class="resources__logo"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener"><img src="./images/logo/resources-polka.svg" alt="Картинка Образовательный проект о самых важных 
+            произведениях русской литературы Полка" class="resources__logo"></a>
+          </li>
         </ul>
 
       </section>
@@ -230,7 +242,7 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логтип Яндекс Практикум">
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип Яндекс Практикум">
           <p class="footer__author">&copy; Иван Талантов</p>
         </div>
         <nav class="footer__column footer__column_content_info">
